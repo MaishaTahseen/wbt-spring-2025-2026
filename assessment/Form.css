@@ -1,0 +1,17 @@
+body{
+    background-color: #EDEDED;
+}
+h1{
+    color: red;
+}
+span {
+    color: red;
+}
+
+#sub {
+    font-size: 12px;     
+    color: black;     
+}
+.label{
+    text-align: right;
+}
