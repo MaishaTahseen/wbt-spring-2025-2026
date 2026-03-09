@@ -3,17 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conatc Me</title>
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/contact.css">
+
 </head>
 <body>
-    <hr>
-    <h4><a href="../index.html">Portfolio</a></h4>
-    <hr>
-    <h4><a href="educations.html">Education</a></h4>
-    <hr>
-    <h4><a href="experience.html">Experience</a></h4>
-    <hr>
-    <h4><a href="projects.html">Projects</a></h4>
+    <header>
+        <nav>
+            <ul id = navbar>
+                <li><h4><a href="../index.html">Portfolio</a></h4></li>
+                <li><h4><a href="educations.html">Education</a></h4></li> 
+                <li><h4><a href="experience.html">Experience</a></h4></li>    
+                <li><h4><a href="projects.html">Projects</a></h4></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Contact Me</h1>
+    <form method="post">
+        <fieldset>
+            <legend>Information for contact</legend>
+            <table>
+                <tr>
+                    <td><label for="fname">First Name:</label></td>
+                    <td><input type="text" name="fname" id="fname" placeholder="Enter First Name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last Name:</label></td>
+                    <td><input type="text" name="lname" id="lname" placeholder="Enter Last Name" required></td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="male" required>Male
+                        <input type="radio" name="gender" value="female" required>Female
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" name="rmail" id="email" placeholder="Enter Email Address" required></td>
+                </tr>
+                <tr>
+                    <td><label for="company">Company:</label></td>
+                    <td><input type="text" name="company" id="company" placeholder="Enter Company name"></td>
+                </tr>
+                <tr>
+                    <td><label>Reason of Contact:</label></td>
+                    <td><select name="roc" required>
+                            <option>Project</option>
+                            <option>Thesis</option>
+                            <option>Job</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Topics:</label></td>
+                    <td>
+                        <input type="checkbox" value="webdev">Web Development
+                        <input type="checkbox" value="mobdev">Mobile Development
+                        <input type="checkbox" value="aiml" required checked>AI/ML Development
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="cdate">Consulation Date:</label></td>
+                    <td><input type="date" name="cdate" id="cdate"></td>
+                </tr>
+                <tr>
+                    <td><label for="msg">Message:</label></td>
+                    <td><textarea name="msg" id="msg" rows="4" cols="40"></textarea></td>
+                </tr>
+                <tr>
+                    <td>            
+                        <input type="submit" value="Register">
+                        <input type="reset">
+                    </td>
+                </tr>
 
+            </table>
+        </fieldset>
+    </form>
+    <footer>
+        <a href="https://github.com/MaishaTahseen" target="_blank"><img src="../Data/GitHub-Logo.png" title="MaishaTahseen/GithHub" height="50"></a>
+        <a href="https://www.linkedin.com/in/maishatahseen25/" target="_blank"><img src="../Data/linkedin-logo.png" title="MaishaTahseen/LinkedIn" height="50"></a>
+    </footer>
 </body>
 </html>
